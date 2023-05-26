@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/56f215be94.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="mobile.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous" defer
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+
+    <script src="main.js" defer></script>
+
+    <title>Aždaja doo</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div>
+          <a class="home-btn" href="#landing">
+            <i id="home-btn" class="fa fa-home" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <h1>Aždaja doo | Veleprodaja akvarijumskih ribica</h1>
+
+        <div class="lang">
+          <a href="./index_en.html"><img src="./img/uk_flag.png" alt="" /></a>
+        </div>
+        <div class="lang">
+          <a href="./index.html"><img src="./img/srb_flag.png" alt="" /></a>
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#about">O nama</a></li>
+            <li><a href="#gallery">Galerija</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Background Image -->
+
+    <div id="bg-img"></div>
+
+    <!-- Landing Page -->
+
+    <div id="landing">
+      <h2 id="welcome">Dobro došli</h2>
+      <img src="./img/logo_f4_f.png" alt="" />
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="heading">O nama</h2>
+      <div>
+        Aždaja doo je kompanija iz Srbije koja je osnovana 2008 godine i bavi se
+        proizvodnjom, uvozom i prodajom akvarijumskih ribica.
+      </div>
+      <div>
+        Uvozimo širok spektar akvarijumskih ribica iz Singapura, Tajlanda,
+        Izraela i Indonezije. Naša saradnja sa pouzdanim dobavljačima omogućava
+        nam da ponudimo veliki izbor egzotičnih vrsta ribica koje nisu dostupne
+        u lokalnom okruženju. Pažljivo biramo ribice za uvoz kako bismo
+        osigurali da su zdrave, dobro prilagođene i da zadovoljavaju postavljene
+        standarde.
+      </div>
+      <div>
+        Uz uvoznu ribu, Aždaja doo svojim kupcima pruža i velik izbor ribica iz
+        sopstvene proizvodnje.
+      </div>
+      <div>
+        Kroz našu stručnost i dugogodišnje iskustvo, osiguravamo da naše ribice
+        budu zdrave, vitalne i spremne za život u akvarijumima kranjih kupaca.
+      </div>
+    </section>
+
+    <!-- Galerija -->
+    <section id="gallery">
+      <h2 class="heading">Galerija</h2>
+      <div class="container-video">
+        <div class="video-list">
+          <video class="active" src="./video/01.mp4" muted></video>
+          <video src="./video/02.mp4" muted></video>
+          <video src="./video/03.mp4" muted></video>
+          <video src="./video/04.mp4" muted></video>
+          <video src="./video/05.mp4" muted></video>
+          <video src="./video/06.mp4" muted></video>
+          <video src="./video/07.mp4" muted></video>
+          <video src="./video/08.mp4" muted></video>
+          <video src="./video/09.mp4" muted></video>
+          <video src="./video/10.mp4" muted></video>
+          <video src="./video/11.mp4" muted></video>
+          <video src="./video/12.mp4" muted></video>
+          <video src="./video/13.mp4" muted></video>
+          <video src="./video/14.mp4" muted></video>
+          <video src="./video/16.mp4" muted></video>
+          <video src="./video/17.mp4" muted></video>
+          <video src="./video/18.mp4" muted></video>
+        </div>
+
+        <div class="main-video">
+          <video src="./video/01.mp4" muted controls></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="heading">Kontakt</h2>
+        <div class="data">
+          Aždaja doo <br />
+          Dušana Vasiljeva 28 <br />
+          21000 Novi Sad <br />
+          PIB: 105848752 <br />
+          MB: XXXXXX <br />
+          PJ: Rumenački put 19, Novi Sad <br />
+          Telefon: <a href="tel:+381 63 574 345">+381 63 574 345</a> <br />
+          E-mail:
+          <a href="mailto:ajaakvaristika@gmail.com">ajaakvaristika@gmail.com</a>
+          <br />
+          <a href="https://www.instagram.com/azdajadoo/" target="_blank"
+            ><i
+              id="instagram-btn"
+              class="fa fa-instagram"
+              aria-hidden="true"
+            ></i>
+            Instagram</a
+          >
+        </div>
+      </div>
+      <form
+        name="contact-form"
+        action="./success.html"
+        method="POST"
+        data-netlify="true"
+      >
+        <div class="form-group">
+          <label for="name" id="name">Ime i prezime</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="message" id="message-label">Poruka</label>
+          <textarea type="text-box" name="message" id="message"></textarea>
+        </div>
+        <div id="submit">
+          <input id="submit-btn" type="submit" value="Pošalji" />
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Sva prava zadržana, 2023 &copy; Aždaja doo</p>
+    </footer>
+
+  </body>
+</html>

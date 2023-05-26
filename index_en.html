@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/56f215be94.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="mobile.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous" defer
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+
+    <script src="main.js" defer></script>
+    
+    <title>Aždaja doo</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div>
+          <a class="home-btn" href="#landing">
+            <i id="home-btn" class="fa fa-home" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <h1>Aždaja doo | Wholesale of Tropical Fish</h1>
+
+        <div class="lang">
+          <a href="./index_en.html"><img src="./img/uk_flag.png" alt="" /></a>
+        </div>
+        <div class="lang">
+          <a href="./index.html"><img src="./img/srb_flag.png" alt="" /></a>
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Background Image -->
+
+    <div id="bg-img"></div>
+
+    <!-- Landing Page -->
+
+    <div id="landing">
+      <h2 id="welcome">Welcome</h2>
+      <img src="./img/logo_f4_f.png" alt="" />
+    </div>
+
+    <!-- O nama -->
+    <section id="about">
+      <h2 class="heading">About Us</h2>
+      <div>
+        Aždaja doo is a company from Serbia founded in 2008 that specializes in production, import, and wholesale of aquarium fish.
+      </div>
+      <div>
+        We import a wide range of aquarium fish from Singapore, Thailand,
+        Israel, and Indonesia. Our collaboration with reliable suppliers allows us to offer a diverse selection of exotic fish species that may not be readily available in the local environment. We carefully select the fish for import to ensure that they are healthy, well-adapted, and meet our established standards.
+      </div>
+      <div>
+        In addition to imported fish, Aždaja doo provides customers with a wide range of fish from our own breeding facilities.  
+      </div>
+      <div>
+        Through our expertise and extensive experience, we ensure that our fish are healthy, vibrant, and ready for their new homes in our customers' aquariums.
+      </div>
+    </section>
+
+    <!-- Galery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="container-video">
+        <div class="video-list">
+          <video class="active" src="./video/01.mp4" muted></video>
+          <video src="./video/02.mp4" muted></video>
+          <video src="./video/03.mp4" muted></video>
+          <video src="./video/04.mp4" muted></video>
+          <video src="./video/05.mp4" muted></video>
+          <video src="./video/06.mp4" muted></video>
+          <video src="./video/07.mp4" muted></video>
+          <video src="./video/08.mp4" muted></video>
+          <video src="./video/09.mp4" muted></video>
+          <video src="./video/10.mp4" muted></video>
+          <video src="./video/11.mp4" muted></video>
+          <video src="./video/12.mp4" muted></video>
+          <video src="./video/13.mp4" muted></video>
+          <video src="./video/14.mp4" muted></video>
+          <video src="./video/16.mp4" muted></video>
+          <video src="./video/17.mp4" muted></video>
+          <video src="./video/18.mp4" muted></video>
+        </div>
+
+        <div class="main-video">
+          <video src="./video/01.mp4" muted controls></video>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="heading">Contact</h2>
+        <div class="data">
+          Aždaja doo <br />
+          Dušana Vasiljeva 28 <br />
+          21000 Novi Sad, Serbia <br />
+          PIB: 105848752 <br />
+          MB: XXXXXX <br />
+          PJ: Rumenački put 19, Novi Sad <br />
+          Phone: +381 63 574 345 <br />
+          E-mail: ajaakvaristika@gmail.com <br />
+          <a href="https://www.instagram.com/azdajadoo/" target="_blank"
+            ><i
+              id="instagram-btn"
+              class="fa fa-instagram"
+              aria-hidden="true"
+            ></i>
+            Instagram</a
+          >
+        </div>
+      </div>
+      <form 
+      name="contact-form"
+      action="./success_en.html"
+      method="POST"
+      data-netlify="true">
+        <div class="form-group">
+          <label for="name" id="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="message" id="message">Message</label>
+          <textarea type="text-box" name="message" id="message"></textarea>
+        </div>
+        <div id="submit">
+          <input id="submit-btn" type="submit" value="Send" />
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>All rights reserved, 2023 &copy; Aždaja doo</p>
+    </footer>
+
+  </body>
+</html>
