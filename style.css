@@ -350,6 +350,7 @@ header .container .lang img:hover {
 
 #contact form .form-group:nth-child(3) {
   margin: 1vw 0;
+  display: flex;
 }
 
 #contact form .form-group label {
